@@ -24,8 +24,8 @@ import (
 func profile(nbrew *notebrew.Notebrew, w http.ResponseWriter, r *http.Request, user User, stripeConfig StripeConfig) {
 	type Site struct {
 		SiteID      notebrew.ID `json:"siteID"`
-		SiteName    string  `json:"siteName"`
-		StorageUsed int64   `json:"storageUsed"`
+		SiteName    string      `json:"siteName"`
+		StorageUsed int64       `json:"storageUsed"`
 	}
 	type Session struct {
 		sessionTokenHash   []byte    `json:"-"`
@@ -35,7 +35,7 @@ func profile(nbrew *notebrew.Notebrew, w http.ResponseWriter, r *http.Request, u
 		Current            bool      `json:"current"`
 	}
 	type Response struct {
-		UserID                notebrew.ID         `json:"userID"`
+		UserID                notebrew.ID     `json:"userID"`
 		Username              string          `json:"username"`
 		Email                 string          `json:"email"`
 		TimezoneOffsetSeconds int             `json:"timezoneOffsetSeconds"`
