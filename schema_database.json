@@ -1,0 +1,27 @@
+[
+  {
+    "table": "customer",
+    "columns": [
+      {
+        "column": "customer_id",
+        "type": {
+          "default": "VARCHAR(500)"
+        },
+        "primarykey": true
+      },
+      {
+        "column": "user_id",
+        "type": {
+          "default": "BINARY(16)",
+          "postgres": "UUID"
+        },
+        "unique": true,
+        "notnull": true,
+        "references": {
+          "table": "users",
+          "column": "user_id"
+        }
+      }
+    ]
+  }
+]
