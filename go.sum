@@ -32,8 +32,8 @@ github.com/aws/aws-sdk-go-v2/service/s3 v1.66.1 h1:MkQ4unegQEStiQYmfFj+Aq5uTp265
 github.com/aws/aws-sdk-go-v2/service/s3 v1.66.1/go.mod h1:cB6oAuus7YXRZhWCc1wIwPywwZ1XwweNp2TVAEGYeB8=
 github.com/aws/smithy-go v1.22.0 h1:uunKnWlcoL3zO7q+gG2Pk53joueEOsnNB28QdMsmiMM=
 github.com/aws/smithy-go v1.22.0/go.mod h1:irrKGvNn1InZwb2d7fkIRNucdfwR8R+Ts3wxYa/cJHg=
-github.com/bokwoon95/notebrew v0.0.13 h1:IowP+4kVbMp6xiNn//qOmoxt3YT+0E2bIpteUWyJ58g=
-github.com/bokwoon95/notebrew v0.0.13/go.mod h1:u9S0fRMT5mvqW9qabBm1WEsC0lG6BqgUX4g5v0MLjO0=
+github.com/bokwoon95/notebrew v0.0.16 h1:l/9dri+oeQVih0KACkAekNIP95RMj4FuWEseyCtIz2g=
+github.com/bokwoon95/notebrew v0.0.16/go.mod h1:u9S0fRMT5mvqW9qabBm1WEsC0lG6BqgUX4g5v0MLjO0=
 github.com/bokwoon95/sqddl v0.4.16 h1:13wA6Qt51YPZ3xLpILTyujk19XclO77a0cWCWDOPurs=
 github.com/bokwoon95/sqddl v0.4.16/go.mod h1:OKDpMxJCGMMtn52HdgltLH7M7zHrLo/lxGbnIkG6nQo=
 github.com/caddyserver/certmagic v0.21.4 h1:e7VobB8rffHv8ZZpSiZtEwnLDHUwLVYLWzWSa1FfKI0=
