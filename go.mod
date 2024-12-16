@@ -6,7 +6,7 @@ require (
 	github.com/bokwoon95/notebrew v0.0.18
 	github.com/bokwoon95/sqddl v0.4.16
 	github.com/stripe/stripe-go/v79 v79.12.0
-	golang.org/x/crypto v0.28.0
+	golang.org/x/crypto v0.31.0
 	golang.org/x/sync v0.8.0
 )
 
