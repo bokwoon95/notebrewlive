@@ -99,6 +99,10 @@
       <td class='pa2'>{{ if index $.UserFlags "NoUploadImage" }}❌{{ else }}✅{{ end }}</td>
     </tr>
     <tr class='bb'>
+      <td class='pa2 b'>Upload videos</td>
+      <td class='pa2'>{{ if index $.UserFlags "NoUploadVideo" }}❌{{ else }}✅{{ end }}</td>
+    </tr>
+    <tr class='bb'>
       <td class='pa2 b'>Use custom domains</td>
       <td class='pa2'>{{ if index $.UserFlags "NoCustomDomain" }}❌{{ else }}✅{{ end }}</td>
     </tr>
