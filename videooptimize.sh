@@ -14,4 +14,10 @@ case "$INPUT_PATH" in
   exit 0
   ;;
 esac
-ffmpeg -hide_banner -loglevel error -i "$INPUT_PATH" -codec copy -movflags +faststart "$OUTPUT_PATH"
+video_codec="$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 "$INPUT_PATH")"
+audio_codec="$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 "$INPUT_PATH")"
+if test "$video_codec" = "h264" && test "$audio_codec" = "aac" ; then
+  ffmpeg -hide_banner -loglevel error -i "$INPUT_PATH" -codec copy -movflags +faststart "$OUTPUT_PATH"
+else
+  ffmpeg -hide_banner -loglevel error -i "$INPUT_PATH" -codec:v libx264 -preset medium -crf 23 -codec:a aac -b:a 128k -filter:v "format=yuv420p" -movflags +faststart "$OUTPUT_PATH"
+fi
