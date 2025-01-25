@@ -9,7 +9,7 @@ if test ! -f "$INPUT_PATH"; then
   exit 1
 fi
 case "$INPUT_PATH" in
-*.svg)
+*.mp4)
   mv "$INPUT_PATH" "$OUTPUT_PATH"
   exit 0
   ;;
