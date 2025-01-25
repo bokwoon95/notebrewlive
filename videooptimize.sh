@@ -14,4 +14,4 @@ case "$INPUT_PATH" in
   exit 0
   ;;
 esac
-ffmpeg -i "$INPUT_PATH" -codec copy -movflags +faststart "$OUTPUT_PATH"
+ffmpeg -hide_banner -loglevel error -i "$INPUT_PATH" -codec copy -movflags +faststart "$OUTPUT_PATH"
