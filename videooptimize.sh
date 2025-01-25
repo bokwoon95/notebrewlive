@@ -1,8 +1,19 @@
 #!/bin/bash
-set -eo pipefail
-
-INPUT="$1"
-OUTPUT="$2"
+set -e
+set -u
+set -o pipefail
+INPUT_PATH="$1"
+OUTPUT_PATH="$2"
+if test ! -f "$INPUT_PATH"; then
+  echo "INPUT_PATH $INPUT_PATH does not exist"
+  exit 1
+fi
+case "$INPUT_PATH" in
+*.svg)
+  mv "$INPUT_PATH" "$OUTPUT_PATH"
+  exit 0
+  ;;
+esac
 
 # Dependency check with priority order
 QT_FASTSTART=$(which qt-faststart 2>/dev/null || true)
