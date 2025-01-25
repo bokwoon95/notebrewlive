@@ -3,7 +3,7 @@ module github.com/bokwoon95/notebrewlive
 go 1.22.0
 
 require (
-	github.com/bokwoon95/notebrew v0.1.7
+	github.com/bokwoon95/notebrew v0.1.8
 	github.com/bokwoon95/sqddl v0.4.16
 	github.com/stripe/stripe-go/v79 v79.12.0
 	golang.org/x/crypto v0.31.0
