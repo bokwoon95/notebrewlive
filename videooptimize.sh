@@ -16,7 +16,7 @@ case "$INPUT_PATH" in
 esac
 video_codec="$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 "$INPUT_PATH")"
 audio_codec="$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 "$INPUT_PATH")"
-if { test "$video_codec" = "av1" || test "$video_codec" = "vp9" } && test "$audio_codec" = "opus"; then
+if { test "$video_codec" = "av1" || test "$video_codec" = "vp9"; } && test "$audio_codec" = "opus"; then
   mv "$INPUT_PATH" "$OUTPUT_PATH"
 elif test "$video_codec" = "h264" && test "$audio_codec" = "aac"; then
   ffmpeg -hide_banner -loglevel error -i "$INPUT_PATH" -codec copy -movflags +faststart "$OUTPUT_PATH"
