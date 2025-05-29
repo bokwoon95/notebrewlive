@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.24.1
 
 require (
-	github.com/bokwoon95/notebrew v0.1.32
+	github.com/bokwoon95/notebrew v0.1.33
 	github.com/bokwoon95/sqddl v0.4.16
 	github.com/stripe/stripe-go/v79 v79.12.0
 	golang.org/x/crypto v0.36.0
