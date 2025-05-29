@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.24.1
 
 require (
-	github.com/bokwoon95/notebrew v0.1.34
+	github.com/bokwoon95/notebrew v0.1.37
 	github.com/bokwoon95/sqddl v0.4.16
 	github.com/stripe/stripe-go/v79 v79.12.0
 	golang.org/x/crypto v0.38.0
@@ -47,7 +47,6 @@ require (
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
 	github.com/kr/fs v0.1.0 // indirect
 	github.com/libdns/cloudflare v0.2.1 // indirect
-	github.com/libdns/godaddy v1.0.3 // indirect
 	github.com/libdns/libdns v1.1.0 // indirect
 	github.com/libdns/namecheap v0.0.0-20250523201144-144eb6168d52 // indirect
 	github.com/libdns/porkbun v1.1.0 // indirect
